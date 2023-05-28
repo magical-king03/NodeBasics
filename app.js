@@ -38,6 +38,10 @@ App.post('/submit-data', (req,res) =>{
 }
 )
 
+App.get('*', (req, res) =>{
+    res.send('<h1>404 Error. Page not found<h1>')
+})
+
 
 App.listen(3000)
 console.log('Server is starting')
